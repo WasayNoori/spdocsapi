@@ -1,0 +1,6 @@
+@SPDocsAPI_HostAddress = http://localhost:5253
+
+GET {{SPDocsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

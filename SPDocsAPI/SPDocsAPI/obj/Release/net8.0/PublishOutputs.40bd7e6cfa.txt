@@ -1,0 +1,11 @@
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\SPDocsAPI.exe
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\SPDocsAPI.dll
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\SPDocsAPI.deps.json
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\SPDocsAPI.runtimeconfig.json
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\SPDocsAPI.pdb
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\wasay\source\repos\WasayNoori\spdocsapi\SPDocsAPI\SPDocsAPI\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
