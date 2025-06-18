@@ -1,24 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\spdocsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|solutionrelative:spdocsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\spdocsapi\\spdocsapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|solutionrelative:spdocsapi\\spdocsapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\spdocsapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|solutionrelative:spdocsapi\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\spdocsapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C1FDBB84-F790-4643-A3B6-8A3B2B794D58}|SPDocsAPI\\SPDocsAPI.csproj|solutionrelative:spdocsapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,60 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SPDocsAPI.http",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\SPDocsAPI.http",
-              "RelativeDocumentMoniker": "SPDocsAPI\\SPDocsAPI.http",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\SPDocsAPI.http",
-              "RelativeToolTip": "SPDocsAPI\\SPDocsAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-06-18T16:44:26.268Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\Program.cs",
-              "RelativeDocumentMoniker": "SPDocsAPI\\Program.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\Program.cs",
-              "RelativeToolTip": "SPDocsAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T16:29:00.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "SPDocsAPI\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "SPDocsAPI\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T15:53:58.754Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "SPDocsAPI\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\appsettings.Development.json",
-              "RelativeToolTip": "SPDocsAPI\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-17T22:51:19.902Z"
             }
           ]
         }

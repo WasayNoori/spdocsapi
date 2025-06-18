@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\SPDocsAPI.csproj",
+      "projectUniqueName": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI.csproj",
       "projectName": "SPDocsAPI",
-      "projectPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\SPDocsAPI.csproj",
+      "projectPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI.csproj",
       "packagesPath": "C:\\Users\\wasay\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\SPDocsAPI\\obj\\",
+      "outputPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
