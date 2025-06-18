@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\DocumentService.cs",
+              "RelativeDocumentMoniker": "Services\\DocumentService.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\DocumentService.cs",
+              "RelativeToolTip": "Services\\DocumentService.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAowMsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:15:57.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LessonsController.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\LessonsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LessonsController.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\LessonsController.cs",
+              "RelativeToolTip": "Controllers\\LessonsController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:15:15.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-18T18:10:58.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\DocumentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DocumentsController.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\DocumentsController.cs",
+              "RelativeToolTip": "Controllers\\DocumentsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:51:38.438Z",
+              "EditorCaption": ""
             }
           ]
         }

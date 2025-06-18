@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SPDocsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa1693b9c60c61dbd19ffcea1c702b33053ee11f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+951a1a46da962fc33e334c5f484bc4573d03992c")]
 [assembly: System.Reflection.AssemblyProductAttribute("SPDocsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SPDocsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
