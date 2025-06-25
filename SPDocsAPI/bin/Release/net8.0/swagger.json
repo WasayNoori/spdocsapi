@@ -1,10 +1,345 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "SPDocsAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "version": "1.0"
+    "title": "SPDocs API",
+    "version": "v1"
   },
   "paths": {
+    "/api/Documents": {
+      "get": {
+        "tags": [
+          "Documents"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DocumentDto"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Documents"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateDocumentDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DocumentDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Documents/{id}": {
+      "get": {
+        "tags": [
+          "Documents"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DocumentDto"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Documents"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdateDocumentDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/DocumentDto"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Documents"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Documents/by-type/{documentType}": {
+      "get": {
+        "tags": [
+          "Documents"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "documentType",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DocumentDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Documents/by-user/{userName}": {
+      "get": {
+        "tags": [
+          "Documents"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "userName",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/DocumentDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Documents/{id}/status": {
+      "patch": {
+        "tags": [
+          "Documents"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Lessons/GetLessonID": {
+      "get": {
+        "tags": [
+          "Lessons"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "category",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Lessons/GetMultipleLessonIDs": {
+      "get": {
+        "tags": [
+          "Lessons"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "categories",
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "collectionFormat": "multi"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Lessons/GetBulkLessonIDs": {
+      "get": {
+        "tags": [
+          "Lessons"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "count",
+            "type": "integer",
+            "format": "int32",
+            "default": 1
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -31,6 +366,99 @@
     }
   },
   "definitions": {
+    "CreateDocumentDto": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "documentType": {
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "filePath": {
+          "type": "string"
+        },
+        "fileSize": {
+          "format": "int64",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DocumentDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "documentType": {
+          "type": "string"
+        },
+        "createdDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "modifiedDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
+          "type": "string"
+        },
+        "modifiedBy": {
+          "type": "string"
+        },
+        "isActive": {
+          "type": "boolean"
+        },
+        "filePath": {
+          "type": "string"
+        },
+        "fileSize": {
+          "format": "int64",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdateDocumentDto": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "documentType": {
+          "type": "string"
+        },
+        "modifiedBy": {
+          "type": "string"
+        },
+        "filePath": {
+          "type": "string"
+        },
+        "fileSize": {
+          "format": "int64",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
     "WeatherForecast": {
       "type": "object",
       "properties": {

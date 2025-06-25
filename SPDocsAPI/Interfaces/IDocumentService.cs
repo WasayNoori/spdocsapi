@@ -18,5 +18,6 @@ namespace SPDocsAPI.Interfaces
         
         // Lesson-specific method
         Task<string> GetLessonIdAsync(string category);
+        Task<IEnumerable<string>> GetBulkLessonIdsAsync(string category, int count);
     }
 } 

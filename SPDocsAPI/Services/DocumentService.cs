@@ -234,6 +234,43 @@ namespace SPDocsAPI.Services
             }
         }
 
+        public async Task<IEnumerable<string>> GetBulkLessonIdsAsync(string category, int count)
+        {
+            try
+            {
+                var parameters = new[]
+                {
+                    new SqlParameter("@Category", category),
+                    new SqlParameter("@Count", count)
+                };
+
+                // Use raw SQL to get the lesson IDs from the stored procedure
+                var lessonIds = new List<string>();
+                
+                using var command = _context.Database.GetDbConnection().CreateCommand();
+                command.CommandText = "EXEC GetBulkCategoryCodes @Category, @Count";
+                command.Parameters.AddRange(parameters);
+
+                await _context.Database.OpenConnectionAsync();
+                
+                using var reader = await command.ExecuteReaderAsync();
+                while (await reader.ReadAsync())
+                {
+                    lessonIds.Add(reader.GetString("LessonID"));
+                }
+
+                return lessonIds;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting bulk lesson IDs for category: {Category}, count: {Count}", category, count);
+                throw;
+            }
+            finally
+            {
+                await _context.Database.CloseConnectionAsync();
+            }
+        }
 
         private static DocumentDto MapToDto(Document document)
         {
