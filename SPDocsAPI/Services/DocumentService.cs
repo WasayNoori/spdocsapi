@@ -5,6 +5,8 @@ using SPDocsAPI.DTOs;
 using SPDocsAPI.Interfaces;
 using SPDocsAPI.Models;
 using System.Data;
+using Microsoft.AspNetCore.Mvc;
+using System.Numerics;
 
 namespace SPDocsAPI.Services
 {
@@ -289,5 +291,52 @@ namespace SPDocsAPI.Services
                 FileSize = document.FileSize
             };
         }
+
+        public async Task<IActionResult> SyncBoardsAsync(List<Board> boards)
+        {
+            var table = CreateBoardDataTable(boards);
+
+            using var connection = _context.Database.GetDbConnection();
+            await connection.OpenAsync();
+
+            using var command = connection.CreateCommand();
+            command.CommandText = "SyncBoards";
+            command.CommandType = CommandType.StoredProcedure;
+            var param = new SqlParameter
+            {
+                ParameterName = "@Boards",
+                SqlDbType = SqlDbType.Structured,
+                TypeName = "BoardListType",
+                Value = table
+            };
+
+
+            command.Parameters.Add(param);
+            try
+            {
+                await command.ExecuteNonQueryAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+          
+            return new OkObjectResult(new { Success = true, Message = "Boards synchronized successfully." });
+        }
+        private DataTable CreateBoardDataTable(List<Board> boards)
+        {
+            var table = new DataTable();
+            table.Columns.Add("boardID", typeof(long));
+            table.Columns.Add("boardName", typeof(string));
+
+            foreach (var board in boards)
+            {
+                table.Rows.Add(long.Parse(board.Id), board.Name);
+            }
+
+            return table;
+        }
+
     }
 } 

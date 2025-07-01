@@ -3,40 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\dtos\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:dtos\\documentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\models\\allboardsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:models\\allboardsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:services\\documentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:controllers\\lessonscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:controllers\\documentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\services\\mondayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:services\\mondayservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\interfaces\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:interfaces\\idocumentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|c:\\users\\wasay\\source\\repos\\wasaynoori\\spdocsapi\\spdocsapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C94B72BF-65C5-1499-FD56-5BFC57A3BB66}|SPDocsAPI.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,126 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DocumentsController.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\DocumentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DocumentsController.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\DocumentsController.cs",
-              "RelativeToolTip": "Controllers\\DocumentsController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAowDUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T21:55:46.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DocumentDto.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\DTOs\\DocumentDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\DocumentDto.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\DTOs\\DocumentDto.cs",
-              "RelativeToolTip": "DTOs\\DocumentDto.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T22:20:34.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DocumentService.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\DocumentService.cs",
-              "RelativeDocumentMoniker": "Services\\DocumentService.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\DocumentService.cs",
-              "RelativeToolTip": "Services\\DocumentService.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAWwOwAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T18:15:57.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T00:17:46.556Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "LessonsController.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\LessonsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LessonsController.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\LessonsController.cs",
-              "RelativeToolTip": "Controllers\\LessonsController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAtwFsAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-18T18:15:15.443Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AllBoardsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Models\\AllBoardsResponse.cs",
-              "RelativeDocumentMoniker": "Models\\AllBoardsResponse.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Models\\AllBoardsResponse.cs",
-              "RelativeToolTip": "Models\\AllBoardsResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T22:42:55.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-30T19:37:48.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MondayService.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\MondayService.cs",
-              "RelativeDocumentMoniker": "Services\\MondayService.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\MondayService.cs",
-              "RelativeToolTip": "Services\\MondayService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T21:59:13.675Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Program.cs",
-              "RelativeToolTip": "Program.cs",
+              "DocumentIndex": 2,
+              "Title": "IDocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Interfaces\\IDocumentService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IDocumentService.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Interfaces\\IDocumentService.cs",
+              "RelativeToolTip": "Interfaces\\IDocumentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-30T19:39:10.767Z"
+              "WhenOpened": "2025-07-01T06:18:35.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DocumentService.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\DocumentService.cs",
+              "RelativeDocumentMoniker": "Services\\DocumentService.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Services\\DocumentService.cs",
+              "RelativeToolTip": "Services\\DocumentService.cs",
+              "ViewState": "AgIAACwBAAAAAAAAAAAmwD0BAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:04:43.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T05:04:36.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DocumentsController.cs",
+              "DocumentMoniker": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\DocumentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DocumentsController.cs",
+              "ToolTip": "C:\\Users\\wasay\\source\\repos\\WasayNoori\\spdocsapi\\SPDocsAPI\\Controllers\\DocumentsController.cs",
+              "RelativeToolTip": "Controllers\\DocumentsController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T01:09:05.533Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SPDocsAPI.DTOs;
 using SPDocsAPI.Interfaces;
 using SPDocsAPI.Models;
 using SPDocsAPI.Services;
+using System.Data;
 
 namespace SPDocsAPI.Controllers
 {
@@ -50,6 +52,9 @@ namespace SPDocsAPI.Controllers
                 List<Board> boards = boardData.Boards
                     .Where(b => !b.Name.StartsWith("subitems of", StringComparison.OrdinalIgnoreCase))
                     .ToList();
+
+                // call Syncboard in documentservice here
+                await _documentService.SyncBoardsAsync(boards);
 
                 return Ok(boards);
             }
@@ -235,5 +240,13 @@ namespace SPDocsAPI.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+
+
+      
+
+
+       
+
     }
 } 

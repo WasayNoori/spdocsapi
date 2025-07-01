@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Mvc;
 using SPDocsAPI.DTOs;
 using SPDocsAPI.Models;
 
@@ -19,5 +20,6 @@ namespace SPDocsAPI.Interfaces
         // Lesson-specific method
         Task<string> GetLessonIdAsync(string category);
         Task<IEnumerable<string>> GetBulkLessonIdsAsync(string category, int count);
+        Task <IActionResult> SyncBoardsAsync(List<Board> boards);
     }
 } 
