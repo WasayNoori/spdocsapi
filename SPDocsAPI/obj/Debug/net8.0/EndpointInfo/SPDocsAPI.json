@@ -89,6 +89,18 @@
         }
       }
     },
+    "/api/Documents/UpdateBoardData": {
+      "post": {
+        "tags": [
+          "Documents"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Documents/{id}": {
       "get": {
         "tags": [

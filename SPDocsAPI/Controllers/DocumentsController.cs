@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using SPDocsAPI.DTOs;
 using SPDocsAPI.Interfaces;
+using SPDocsAPI.Models;
+using SPDocsAPI.Services;
 
 namespace SPDocsAPI.Controllers
 {
@@ -10,11 +12,13 @@ namespace SPDocsAPI.Controllers
     {
         private readonly IDocumentService _documentService;
         private readonly ILogger<DocumentsController> _logger;
+        private readonly IConfiguration _configuration;
 
-        public DocumentsController(IDocumentService documentService, ILogger<DocumentsController> logger)
+        public DocumentsController(IDocumentService documentService, ILogger<DocumentsController> logger, IConfiguration configuration)
         {
             _documentService = documentService;
             _logger = logger;
+            _configuration = configuration;
         }
 
         /// <summary>
@@ -36,6 +40,25 @@ namespace SPDocsAPI.Controllers
             }
         }
 
+
+        [HttpPost("UpdateBoardData")]
+        public async Task<ActionResult> UpdateBoardData()
+        {
+            try
+            {
+                AllBoardsResponse boardData = await MondayService.GetAllBoardsAsync(_configuration);
+                List<Board> boards = boardData.Boards
+                    .Where(b => !b.Name.StartsWith("subitems of", StringComparison.OrdinalIgnoreCase))
+                    .ToList();
+
+                return Ok(boards);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating board data");
+                return StatusCode(500, "Internal server error");
+            }
+        }
         /// <summary>
         /// Get a specific document by ID
         /// </summary>

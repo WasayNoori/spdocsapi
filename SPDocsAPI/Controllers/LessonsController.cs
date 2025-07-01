@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using SPDocsAPI.Interfaces;
+using Microsoft.Extensions.Configuration;
 
 namespace SPDocsAPI.Controllers
 {
@@ -9,11 +10,13 @@ namespace SPDocsAPI.Controllers
     {
         private readonly IDocumentService _documentService;
         private readonly ILogger<LessonsController> _logger;
+        private readonly IConfiguration _configuration;
 
-        public LessonsController(IDocumentService documentService, ILogger<LessonsController> logger)
+        public LessonsController(IDocumentService documentService, ILogger<LessonsController> logger, IConfiguration configuration)
         {
             _documentService = documentService;
             _logger = logger;
+            _configuration = configuration;
         }
 
         /// <summary>
@@ -96,5 +99,7 @@ namespace SPDocsAPI.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+
+       
     }
 } 
