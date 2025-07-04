@@ -15,6 +15,7 @@ namespace SPDocsAPI.Controllers
         private readonly IDocumentService _documentService;
         private readonly ILogger<DocumentsController> _logger;
         private readonly IConfiguration _configuration;
+        
 
         public DocumentsController(IDocumentService documentService, ILogger<DocumentsController> logger, IConfiguration configuration)
         {
@@ -64,22 +65,38 @@ namespace SPDocsAPI.Controllers
         }
 
         [HttpPost("UpdateActivityLogs")]
-        public async Task<ActionResult> UpdateActivityLogs([FromQuery] long boardId)
+        public async Task<ActionResult> UpdateActivityLogs()
         {
-            try
-            {
-                ActivityLogRoot actionlogresult = await MondayService.GetActivityBoardAsync(_configuration, boardId);
-                if (actionlogresult == null) return NotFound("Error");
-                await _documentService.SyncActivityLogs(actionlogresult.Data.Boards[0].ActivityLogs,boardId);
 
-                return Ok(actionlogresult.Data.Boards[0].ActivityLogs);
-            }
-            catch (Exception)
-            {
+            //first get all the boards
+            List<Board> boards = (await MondayService.GetAllBoardsAsync(_configuration)).Boards
+                .Where(b => !b.Name.StartsWith("subitems of", StringComparison.OrdinalIgnoreCase))
+                .ToList();
 
-                throw;
+            if(boards == null || !boards.Any())
+            {
+                return NotFound("No boards found to update activity logs");
             }
-               
+            int boardCount = boards.Count;
+            int errCount = 0;
+            foreach (var board in boards)
+            {
+                try
+                {
+                    long boardId = long.Parse(board.Id);
+                    ActivityLogRoot actionlogresult = await MondayService.GetActivityBoardAsync(_configuration,boardId);
+                    if (actionlogresult == null) return NotFound("Error");
+                    await _documentService.SyncActivityLogs(actionlogresult.Data.Boards[0].ActivityLogs, boardId);
+                }
+                catch (Exception ex)
+                {
+
+                    errCount++;
+                }
+            }
+            
+            return Ok(new { message = $"{boardCount-errCount}  out of {boardCount} updated successfully" });
+
         }
 
 

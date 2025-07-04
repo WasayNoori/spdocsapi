@@ -106,16 +106,6 @@
         "tags": [
           "Documents"
         ],
-        "parameters": [
-          {
-            "name": "boardId",
-            "in": "query",
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
         "responses": {
           "200": {
             "description": "OK"
