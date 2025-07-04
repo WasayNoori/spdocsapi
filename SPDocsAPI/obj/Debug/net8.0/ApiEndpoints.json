@@ -193,8 +193,34 @@
   },
   {
     "ContainingType": "SPDocsAPI.Controllers.DocumentsController",
+    "Method": "UpdateActivityLogs",
+    "RelativePath": "api/Documents/UpdateActivityLogs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "boardId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPDocsAPI.Controllers.DocumentsController",
     "Method": "UpdateBoardData",
     "RelativePath": "api/Documents/UpdateBoardData",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SPDocsAPI.Controllers.DocumentsController",
+    "Method": "UpdateUsers",
+    "RelativePath": "api/Documents/UpdateUsers",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

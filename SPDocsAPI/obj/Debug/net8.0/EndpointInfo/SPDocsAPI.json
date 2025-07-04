@@ -89,6 +89,40 @@
         }
       }
     },
+    "/api/Documents/UpdateUsers": {
+      "post": {
+        "tags": [
+          "Documents"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Documents/UpdateActivityLogs": {
+      "post": {
+        "tags": [
+          "Documents"
+        ],
+        "parameters": [
+          {
+            "name": "boardId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int64"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Documents/UpdateBoardData": {
       "post": {
         "tags": [

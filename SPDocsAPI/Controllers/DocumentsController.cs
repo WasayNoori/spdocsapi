@@ -41,6 +41,46 @@ namespace SPDocsAPI.Controllers
                 return StatusCode(500, "Internal server error");
             }
         }
+        [HttpPost("UpdateUsers")]
+        public async Task<ActionResult> UpdateUsers()
+        {
+            try
+            {
+                // call SyncUsers in documentservice here
+                UserResponse response= await MondayService.GetAllusers(_configuration);
+                if (response == null || response.Users == null || !response.Users.Any())
+                {
+                    return NotFound("No users found to update");
+                }
+
+                await _documentService.SyncUsers(response.Users);
+                return Ok(new { message = "Users updated successfully" });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error updating users");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
+        [HttpPost("UpdateActivityLogs")]
+        public async Task<ActionResult> UpdateActivityLogs([FromQuery] long boardId)
+        {
+            try
+            {
+                ActivityLogRoot actionlogresult = await MondayService.GetActivityBoardAsync(_configuration, boardId);
+                if (actionlogresult == null) return NotFound("Error");
+                await _documentService.SyncActivityLogs(actionlogresult.Data.Boards[0].ActivityLogs,boardId);
+
+                return Ok(actionlogresult.Data.Boards[0].ActivityLogs);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+               
+        }
 
 
         [HttpPost("UpdateBoardData")]

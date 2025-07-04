@@ -21,5 +21,7 @@ namespace SPDocsAPI.Interfaces
         Task<string> GetLessonIdAsync(string category);
         Task<IEnumerable<string>> GetBulkLessonIdsAsync(string category, int count);
         Task <IActionResult> SyncBoardsAsync(List<Board> boards);
+        Task<IActionResult> SyncUsers(List<User>users);
+        Task<IActionResult> SyncActivityLogs(List<ActivityLog> activityLogs,long boardId);
     }
 } 

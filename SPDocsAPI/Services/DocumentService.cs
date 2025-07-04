@@ -337,6 +337,171 @@ namespace SPDocsAPI.Services
 
             return table;
         }
+        private DataTable CreateUsersDataTable(List<User> users)
+        {
+            var table = new DataTable();
+            table.Columns.Add("MondayUserID", typeof(string));
+            table.Columns.Add("FullName", typeof(string));
+            table.Columns.Add("Email", typeof(string));
+            table.Columns.Add("Role", typeof(string));
+            table.Columns.Add("BusinessUnit", typeof(string));
+            foreach (var user in users)
+            {
+                var email = user.Email?.ToLower() ?? string.Empty;
+                if (email.EndsWith("solidprofessor.com"))
+                {
+                    user.BusinessUnit = "Solid Professor";
+                }
+                else
+                {
+                    user.BusinessUnit = "HRS";
+                }
+                table.Rows.Add(user.ID, user.Name, user.Email, user.Role, user.BusinessUnit);
+            }
+            return table;
+        }
+        private DataTable CreateActivityTable(List<ActivityLog> activityLogs,long boardId)
+        {
+            var table = new DataTable();
+            table.Columns.Add("id", typeof(string));
+            table.Columns.Add("boardID", typeof(long));
+           
+            table.Columns.Add("MondayUserID", typeof(string));
+            table.Columns.Add("activityDate", typeof(string));
+            table.Columns.Add("activityType", typeof(string));
 
+            foreach (var log in activityLogs)
+            {
+                try
+                {
+                    if (!IsValidLogEntry(log))
+                    {
+                        continue; // Skip invalid log entries
+                    }
+                    long time = long.Parse(log.ActionDate);
+                    var dt = DateTimeOffset.FromUnixTimeMilliseconds(time / 10000).UtcDateTime.Date;
+                    table.Rows.Add(log.Id, boardId, log.UserID, dt.ToString("MM-dd-yyyy"), log.Actiontype);
+                }
+
+                catch (Exception)
+                {
+
+
+                }
+            }
+            try
+            {
+                var top5 = table.AsEnumerable()
+                    .OrderByDescending(row => DateTime.Parse(row.Field<string>("activityDate")))
+                     .Take(5)
+                     .CopyToDataTable();
+                return top5;
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+         
+        }
+
+        private bool IsValidLogEntry(ActivityLog log)
+        {
+            // Check if UserID is a valid, non-empty, numeric string and greater than 0
+            if (string.IsNullOrWhiteSpace(log.UserID))
+                return false;
+
+            if (!long.TryParse(log.UserID, out var userIdValue))
+                return false;
+
+            if (userIdValue <= 0)
+                return false;
+
+            List<string> validActionTypes = new List<string>
+            {
+                "update_column_value",
+                "create_pulse",
+                "create_group",
+                "update_name"
+            };
+
+            if (!validActionTypes.Contains(log.Actiontype))
+                return false;
+
+            return true;
+        }
+        public async Task<IActionResult> SyncUsers(List<User>users)
+        {
+            var table = CreateUsersDataTable(users);
+
+            using var connection = _context.Database.GetDbConnection();
+            await connection.OpenAsync();
+
+            using var command = connection.CreateCommand();
+            command.CommandText = "AddUsersIfNotExists";
+            command.CommandType = CommandType.StoredProcedure;
+            var param = new SqlParameter
+            {
+                ParameterName = "@Users",
+                SqlDbType = SqlDbType.Structured,
+                TypeName = "UserType",
+                Value = table
+            };
+
+
+            command.Parameters.Add(param);
+            try
+            {
+                await command.ExecuteNonQueryAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+            return new OkObjectResult(new { Success = true, Message = "Boards synchronized successfully." });
+        }
+
+        public async Task<IActionResult> SyncActivityLogs(List<ActivityLog> activityLogs, long boardId)
+        {
+            var table = CreateActivityTable(activityLogs, boardId);
+
+            using var connection = _context.Database.GetDbConnection();
+            await connection.OpenAsync();
+
+            using var command = connection.CreateCommand();
+            command.CommandText = "InsertBoardActivities";
+            command.CommandType = CommandType.StoredProcedure;
+            var param = new SqlParameter
+            {
+                ParameterName = "@Activities",
+                SqlDbType = SqlDbType.Structured,
+                TypeName = "activity",
+                Value = table
+            };
+
+            var paramboardId = new SqlParameter
+            {
+                ParameterName = "@BoardID",
+                SqlDbType = SqlDbType.BigInt,
+                Value = boardId
+            };
+
+            command.Parameters.Add(param);
+            command.Parameters.Add(paramboardId);
+            try
+            {
+                await command.ExecuteNonQueryAsync();
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+            return new OkObjectResult(new { Success = true, Message = "Boards synchronized successfully." });
+        }
     }
 } 
